@@ -1,0 +1,45 @@
+:root{--prune:#2e1a47;--lilas:#f1e6ff;--citron:#c6f432;--brume:#8a7f99}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:var(--prune);font:19px/1.72 "Source Serif 4",Georgia,serif}
+a{color:inherit}
+header.site{background:var(--prune);color:#fff;padding:18px 6vw;display:flex;justify-content:space-between;align-items:center}
+.marque{font:800 22px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.marque i{font-style:normal;background:var(--citron);color:var(--prune);padding:0 6px;margin-left:4px;border-radius:3px}
+header.site nav a{font:500 15px "Bricolage Grotesque";text-decoration:none;margin-left:20px;opacity:.85}
+.tete{background:var(--prune);color:#fff;padding:34px 6vw 64px}
+.fil{font:500 14px "Bricolage Grotesque";color:var(--citron);letter-spacing:.1em;text-transform:uppercase}
+.fil a{text-decoration:none}
+.tete h1{font:800 clamp(34px,4.8vw,62px)/1.04 "Bricolage Grotesque";max-width:20ch;margin:14px 0 20px;letter-spacing:-.02em}
+.chapo{max-width:60ch;color:#e4dbef;font-size:20px}
+.meta{margin-top:22px;font:500 14px "Bricolage Grotesque";color:#b9acc9}
+.reponse-courte{margin:-34px 6vw 0;background:var(--citron);border-radius:20px;padding:22px 28px;max-width:760px;position:relative}
+.reponse-courte b{font:800 13px "Bricolage Grotesque";letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:4px}
+.reponse-courte p{font-size:18px;line-height:1.55}
+main{display:grid;grid-template-columns:minmax(0,680px) 260px;gap:6vw;padding:50px 6vw 30px}
+article h2{font:800 28px/1.15 "Bricolage Grotesque";margin:42px 0 14px;letter-spacing:-.01em}
+article p{margin-bottom:18px}
+article p:first-of-type::first-letter{font:800 58px/0.9 "Bricolage Grotesque";float:left;margin:6px 10px 0 0;color:var(--prune);background:var(--citron);padding:6px 8px;border-radius:10px}
+article ul{margin:0 0 20px 0;list-style:none}
+article ul li{padding-left:26px;position:relative;margin-bottom:8px}
+article ul li::before{content:"";position:absolute;left:4px;top:13px;width:10px;height:10px;border-radius:50%;background:var(--citron);outline:2px solid var(--prune)}
+.dessin{margin:30px 0;background:var(--lilas);border-radius:22px;padding:22px 22px 10px}
+.dessin svg{width:100%;height:auto}
+.dessin figcaption{font:500 22px "Caveat",cursive;margin-top:4px}
+.aparte{border-left:5px solid var(--citron);padding:4px 0 4px 20px;margin:26px 0;font-style:italic;color:#4d3d63}
+aside.cote{position:sticky;top:20px;align-self:start}
+.post-it{background:var(--lilas);border-radius:18px;padding:22px;transform:rotate(-1.2deg)}
+.post-it b{font:500 26px "Caveat",cursive;display:block;margin-bottom:6px}
+.post-it li{list-style:none;font-size:16px;line-height:1.5;margin-bottom:10px}
+.vf{margin:40px 0 10px;display:flex;gap:16px;flex-wrap:wrap}
+.vf div{flex:1 1 200px;background:#fff;border:2px solid var(--prune);border-radius:16px;padding:16px 18px;font-size:16px;line-height:1.5}
+.vf span{font:800 12px "Bricolage Grotesque";letter-spacing:.1em;text-transform:uppercase;padding:2px 9px;border-radius:20px;display:inline-block;margin-bottom:8px}
+.vf .faux{background:var(--prune);color:#fff}.vf .vrai{background:var(--citron)}
+.sources{margin-top:40px;font-size:15px;color:#5c4e70;border-top:2px dotted #cfc6db;padding-top:18px}
+.sources h3{font:800 16px "Bricolage Grotesque";margin-bottom:6px;color:var(--prune)}
+.sources li{margin:0 0 6px 18px}
+.suite{background:var(--lilas);padding:44px 6vw;margin-top:30px}
+.suite h2{font:800 26px "Bricolage Grotesque";margin-bottom:16px}
+.suite a{display:inline-block;background:#fff;border-radius:40px;padding:10px 20px;margin:0 10px 10px 0;text-decoration:none;font-weight:600;font-size:16px}
+.suite a:hover{background:var(--citron)}
+footer{background:var(--prune);color:#c9bedb;padding:34px 6vw;font-size:14px}
+@media(max-width:900px){main{grid-template-columns:1fr}aside.cote{position:static}header.site nav{display:none}.reponse-courte{margin:-34px 4vw 0}}
