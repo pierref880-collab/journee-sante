@@ -43,3 +43,5 @@ aside.cote{position:sticky;top:20px;align-self:start}
 .suite a:hover{background:var(--citron)}
 footer{background:var(--prune);color:#c9bedb;padding:34px 6vw;font-size:14px}
 @media(max-width:900px){main{grid-template-columns:1fr}aside.cote{position:static}header.site nav{display:none}.reponse-courte{margin:-34px 4vw 0}}
+article p a,article li a{text-decoration:underline;text-decoration-color:var(--citron);text-decoration-thickness:4px;text-underline-offset:3px;font-weight:600}
+article p a:hover,article li a:hover{background:var(--citron);text-decoration-color:var(--prune)}
